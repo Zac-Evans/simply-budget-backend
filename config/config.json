@@ -3,10 +3,10 @@
     "use_env_variable": "DATABASE_URL"
   },
   "production": {
-    "username": "zac-evans",
-    "password": null,
-    "database": "simply_budget",
-    "host": "127.0.0.1",
+    "username": "xaehoavlqkmtdq",
+    "password": "2e02e1c28afd2673cb8f9d9561d03b97d4259031f525e8cdca1269f3b3971717",
+    "database": "dffsn0shmr7t5r",
+    "host": "ec2-54-84-98-18.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
