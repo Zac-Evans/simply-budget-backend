@@ -1,5 +1,12 @@
 {
   "development": {
     "use_env_variable": "DATABASE_URL"
+  },
+  "production": {
+    "username": "zac-evans",
+    "password": null,
+    "database": "simply_budget",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
   }
 }
