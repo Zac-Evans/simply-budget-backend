@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       models.budget_categories.hasMany(purchases, {
         foreignKey: "id",
+        onDelete: "set null",
       });
       purchases.belongsTo(models.budget_categories, {
         foreignKey: "category_id",

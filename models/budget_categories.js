@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       });
       models.purchases.belongsTo(budget_categories, {
         foreignKey: "category_id",
+        onDelete: "set null",
       });
     }
   }

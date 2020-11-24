@@ -8,6 +8,7 @@ const Sequelize = require("sequelize");
 // For bcrypt
 const saltRounds = 10;
 const bcrypt = require("bcrypt");
+const { sequelize } = require("../models");
 // const { eq } = require("sequelize/types/lib/operators");
 let userLoggedIn = false;
 
