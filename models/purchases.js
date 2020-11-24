@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       });
       purchases.belongsTo(models.budget_categories, {
         foreignKey: "category_id",
-        onDelete: "SET NULL",
+        onDelete: "set null",
       });
     }
   }
@@ -25,9 +25,9 @@ module.exports = (sequelize, DataTypes) => {
         references: {
           model: "budget_categories",
           key: "id",
-          onDelete: "SET NULL",
+          onDelete: "set null",
         },
-        onDelete: "SET NULL",
+        onDelete: "set null",
       },
       user_id: {
         type: DataTypes.INTEGER,
