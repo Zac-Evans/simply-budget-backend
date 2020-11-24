@@ -34,7 +34,7 @@ router.post("/user/:user_id/budget/create", (req, res) => {
     .create({
       category_name: req.body.category_name,
       category_budget: req.body.category_budget,
-      budget_remaining: req.body.budget_remaining,
+      budget_remaining: req.body.category_budget,
       user_id: req.params.user_id,
     })
     .then((user) => res.json(user))
@@ -75,7 +75,7 @@ router.delete("/user/:user_id/budget/category/:category_id", (req, res) => {
     })
     .then(() => res.send("success"))
 
-    .catch(() => res.send("fail"));
+    .catch((response) => res.send(response));
 });
 
 //Update a category
