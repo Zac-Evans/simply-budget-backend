@@ -169,7 +169,7 @@ router.post("/login", (req, res) => {
       });
     })
     .catch((e) => {
-      res.status(404).send("Email/Password combination did not match");
+      res.status(404).send(e);
     });
 });
 
